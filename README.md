@@ -80,8 +80,8 @@ Siga os passos abaixo para ter o **Luminaria** rodando em sua máquina local.
 
 Primeiro, clone este repositório para sua máquina:
 ```bash
-git clone https://github.com/seu-usuario/assistente-sinopse.git
-cd assistente-sinopse
+git clone https://github.com/MarcosWinther/project-react-node-gemini-AI-assistant-to-generate-synopsis
+cd project-react-node-gemini-AI-assistant-to-generate-synopsis
 ```
 
 ### 2. Configurando o Backend (`server`)
