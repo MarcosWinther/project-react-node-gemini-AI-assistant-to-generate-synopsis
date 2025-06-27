@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --bg-color: #121212; /* Um preto mais suave que o puro */
+  --primary-color: #D4AF37; /* Dourado/Âmbar para o destaque */
+  --text-color: #E0E0E0; /* Branco suave para não cansar a vista */
+  --container-bg: #1E1E1E; /* Cor de fundo para os containers */
+  --border-color: #333;
+  --error-color: #E57373;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 2. LAYOUT PRINCIPAL DA APLICAÇÃO --- */
+.App {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* --- 3. ESTILOS DE TEXTO --- */
+h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Responsivo */
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 500px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* --- 4. FORMULÁRIO E ELEMENTOS INTERATIVOS --- */
+form {
+  display: flex;
+  flex-wrap: wrap; /* Permite que o botão quebre a linha em telas pequenas */
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+input[type="text"] {
+  flex-grow: 1; /* Ocupa o espaço disponível */
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  outline: none; /* Remove a borda padrão do navegador */
+  min-width: 250px;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-body);
+  border-radius: 8px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px; /* Garante tamanho mínimo durante o loading */
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+}
+
+button:disabled {
+  background-color: #555;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* --- 5. RESULTADOS E FEEDBACK --- */
+.sinopse-container {
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: left;
+  background-color: var(--container-bg);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.sinopse-container h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sinopse-container p {
+  line-height: 1.7;
+  opacity: 0.9;
+  white-space: pre-wrap; /* Preserva as quebras de linha da IA */
+}
+
+.error {
+  color: var(--error-color);
+  margin-top: 15px;
+  font-weight: bold;
+  background-color: rgba(229, 115, 115, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--error-color);
+}
+
+/* --- 6. ANIMAÇÕES E EFEITOS ESPECIAIS --- */
+
+/* Animação para a sinopse aparecer */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação do spinner de carregamento */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-top-color: var(--bg-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
