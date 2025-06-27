@@ -39,7 +39,7 @@ Este projeto foi desenvolvido como um exercício prático e uma demonstração d
 
 ## 💡 A Gênese do Projeto: Uma Jornada de Aprendizado
 
-Este projeto nasceu como parte do desafio do curso **"Integrando o ChatGPT com Node e React"**, ministrado pelo excelente professor **Felipe Silva Aguiar** na plataforma **DIO**.
+Este projeto nasceu como parte do desafio do curso **"Integrando o ChatGPT com Node e React"**, ministrado pelo excelente professor **[Felipe Silva Aguiar](https://www.linkedin.com/in/felipeaguiar-exe/)** na plataforma **[DIO](https://www.dio.me)**.
 
 Inspirado pelo desafio, optei por explorar uma rota alternativa, utilizando o **Google AI Studio** e a API do **Gemini**. Essa decisão teve como objetivo aprofundar meus conhecimentos em diferentes modelos de linguagem e entender as nuances de suas integrações.
 
