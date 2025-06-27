@@ -2,7 +2,15 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Animação de um cérebro digital com redes neurais" width="400">
 </p>
 
+
+
 # 📖 Luminaria: Gerador de Sinopses com IA 🤖
+
+<br>
+
+> ⭐ Se você gostou do projeto, deixe uma estrela no repositório!
+
+<br>
 
 *Dando vida a novas histórias com o poder da Inteligência Artificial do Google Gemini.*
 
@@ -31,7 +39,7 @@ Este projeto foi desenvolvido como um exercício prático e uma demonstração d
 
 ## 💡 A Gênese do Projeto: Uma Jornada de Aprendizado
 
-Este projeto nasceu como parte do desafio do curso **"Integrando o ChatGPT com Node e React"**, ministrado pelo excelente professor **Felipe Silva Aguiar** na plataforma **DIO**.
+Este projeto nasceu como parte do desafio do curso **"Integrando o ChatGPT com Node e React"**, ministrado pelo excelente professor **[Felipe Silva Aguiar](https://www.linkedin.com/in/felipeaguiar-exe/)** na plataforma **[DIO](https://www.dio.me)**.
 
 Inspirado pelo desafio, optei por explorar uma rota alternativa, utilizando o **Google AI Studio** e a API do **Gemini**. Essa decisão teve como objetivo aprofundar meus conhecimentos em diferentes modelos de linguagem e entender as nuances de suas integrações.
 
@@ -80,8 +88,8 @@ Siga os passos abaixo para ter o **Luminaria** rodando em sua máquina local.
 
 Primeiro, clone este repositório para sua máquina:
 ```bash
-git clone https://github.com/seu-usuario/assistente-sinopse.git
-cd assistente-sinopse
+git clone https://github.com/MarcosWinther/project-react-node-gemini-AI-assistant-to-generate-synopsis
+cd project-react-node-gemini-AI-assistant-to-generate-synopsis
 ```
 
 ### 2. Configurando o Backend (`server`)
