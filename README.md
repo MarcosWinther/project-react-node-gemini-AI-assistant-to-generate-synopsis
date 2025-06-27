@@ -2,7 +2,15 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Animação de um cérebro digital com redes neurais" width="400">
 </p>
 
+
+
 # 📖 Luminaria: Gerador de Sinopses com IA 🤖
+
+<br>
+
+> ⭐ Se você gostou do projeto, deixe uma estrela no repositório!
+
+<br>
 
 *Dando vida a novas histórias com o poder da Inteligência Artificial do Google Gemini.*
 
